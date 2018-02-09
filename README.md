@@ -1,2 +1,2 @@
-# moonrune-generator.github.io
+# Moonrune Generator
 Convert alphabet into moonrunes
