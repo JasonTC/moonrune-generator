@@ -27,20 +27,7 @@ let character = {
 	z:'\u4E59'
 }
 
-// button
-// document.querySelector('#convert').addEventListener('click', () => {
-// 	convert()
-// })
-
-// checkboxes
-// document.querySelector('#update').addEventListener('click', () => {
-// 	if(document.querySelector('#update').checked) {
-// 		document.querySelector('#convert').setAttribute('disabled', '') // disable button
-// 	}
-// 	else {
-//         document.querySelector('#convert').removeAttribute('disabled') // enable button
-// 	}
-// })
+// checkbox
 document.querySelector('#double').addEventListener('click', () => {
 	convert()
 })
