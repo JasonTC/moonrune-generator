@@ -28,28 +28,26 @@ let character = {
 }
 
 // button
-document.querySelector('#convert').addEventListener('click', () => {
-	convert()
-})
+// document.querySelector('#convert').addEventListener('click', () => {
+// 	convert()
+// })
 
 // checkboxes
-document.querySelector('#update').addEventListener('click', () => {
-	if(document.querySelector('#update').checked) {
-		document.querySelector('#convert').setAttribute('disabled', '') // disable button
-	}
-	else {
-        document.querySelector('#convert').removeAttribute('disabled') // enable button
-	}
-})
+// document.querySelector('#update').addEventListener('click', () => {
+// 	if(document.querySelector('#update').checked) {
+// 		document.querySelector('#convert').setAttribute('disabled', '') // disable button
+// 	}
+// 	else {
+//         document.querySelector('#convert').removeAttribute('disabled') // enable button
+// 	}
+// })
 document.querySelector('#double').addEventListener('click', () => {
 	convert()
 })
 
 // input
 document.querySelector('#input').addEventListener('input', () => {
-	if(document.querySelector('#update').checked) {
-		convert()
-	}
+	convert()
 })
 
 // convert text to moonrunes
