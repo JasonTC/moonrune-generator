@@ -7,13 +7,14 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
 
 		<title>Moonrune Generator - Converts Alphabet into Moonrunes</title>
 		<meta name="description" content="Convert Alphabet into Moonrunes">
 		<meta name="author" content="Jason Chew">
 	</head>
-	<body>
-		<div class="container">
+	<body class="bg-light">
+		<main role="main" class="container">
 			<div class="card mt-3">
 				<div class="card-header">
 					<h1>Moonrune Generator</h1>
@@ -29,15 +30,24 @@
 					</div>
 					<div class="form-group">
 						<label for="input">Input</label>
-						<textarea class="form-control" id="input" rows="10" placeholder="Type/paste your text here"></textarea>
+						<textarea class="form-control" id="input" rows="8" placeholder="Type/paste your text here"></textarea>
 					</div>
+				</div>
+				<hr>
+				<div class="card-body">
 					<div class="form-group">
 						<label for="input">Output</label>
-						<textarea class="form-control" id="output" rows="10" disabled></textarea>
+						<textarea class="form-control" id="output" rows="8" disabled></textarea>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<span class="text-muted extra-thicc">正父卞尺丹&nbsp;&nbsp;卞廾工亡亡</span>
+			</div>
+		</footer>
 
 		<!-- Optional JavaScript -->
 		<script src="js/scripts.js"></script>
