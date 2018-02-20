@@ -49,9 +49,15 @@ let convert = () => {
 	}
 
 	document.querySelector('#output').value = input
+	$('#output').trigger('autoresize')
 }
 
+// sample text
+document.querySelector('#sample').addEventListener('mouseover', () => {
+	document.querySelector('span').classList.add('spin')
+})
+
 // focus Input
-(() => {
+let focus = (() => {
 	document.querySelector('#input').focus()
 })()

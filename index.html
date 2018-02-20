@@ -7,56 +7,75 @@
 
 		<link rel="icon" href="favicon.png">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link rel="stylesheet" href="css/styles.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<title>Moonrune Generator - Converts Alphabet into Moonrunes</title>
 		<meta name="description" content="Convert Alphabet into Moonrunes">
 		<meta name="author" content="Jason Chew">
 	</head>
-	<body class="bg-light">
-		<main role="main" class="container">
-			<div class="card mt-3">
-				<div class="card-header">
-					<h1>Moonrune Generator</h1>
-				</div>
-				<div class="card-body">
-					<p>Convert Alphabet into Moonrunes</p>
-					<hr>
-					<div class="form-check mb-2">
-						<label class="form-check-label">
-							<input class="form-check-input" type="checkbox" id="double" checked>
-							Double spacing
-						</label>
+	<body class="grey lighten-4">
+		<main class="container">
+			<div class="card blue-grey lighten-5">
+				<div class="card-content">
+					<div class="section">
+						<h1>Moonrune Generator</h1>
 					</div>
-					<div class="form-group">
-						<label for="input">Input</label>
-						<textarea class="form-control" id="input" rows="8" placeholder="Type/paste your text here"></textarea>
-					</div>
-				</div>
-				<hr>
-				<div class="card-body">
-					<div class="form-group">
-						<label for="input">Output</label>
-						<textarea class="form-control" id="output" rows="8" readonly></textarea>
+					<div class="divider"></div>
+					<div class="section">
+						<form>
+							<div class="row">
+								<p class="col s12">
+									<input type="checkbox" id="double" checked>
+									<label for="double">Double spacing</label>
+								</p>
+								<h5 class="col s12">Input</h5>
+								<div class="input-field col s12">
+									<textarea id="input" class="materialize-textarea"></textarea>
+								</div>
+							</div>
+						</form>
+						<div class="divider"></div>
+						<h5>Output</h5>
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<textarea id="output" class="materialize-textarea" readonly></textarea>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 
-		<footer class="footer">
+		<footer class="page-footer blue-grey">
 			<div class="container">
-				<span class="text-muted extra-thicc">乇乂卞尺丹&nbsp;&nbsp;卞廾工亡亡</span>
-				<a href="https://github.com/JasonTC/moonrune-generator" class="text-muted float-right src">GitHub</a>
+				<div class="row">
+					<div class="col s12">
+						<h5>Convert Alphabet into Moonrunes</h5>
+						<p id="sample"><span>Sample Text™</span>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					乇乂卞尺丹&nbsp;&nbsp;卞廾工亡亡
+					<a href="https://github.com/JasonTC/moonrune-generator" class="grey-text text-lighten-4 right">GitHub</a>
+				</div>
 			</div>
 		</footer>
 
-		<!-- Optional JavaScript -->
+		<!-- Scripts -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script src="js/scripts.js"></script>
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
