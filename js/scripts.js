@@ -3,27 +3,27 @@ let character = {
 	b:'\u4E43',
 	c:'\u4EA1',
 	d:'\u5200',
-	e:'\u6B63',
+	e:'\u4E47',
 	f:'\u4E4D',
 	g:'\uB354',
 	h:'\u5EFE',
 	i:'\u5DE5',
 	j:'\u4E85',
-	k:'\u3093',
+	k:'\u957F',
 	l:'\u5315',
-	m:'\u96E8',
+	m:'\u4ECE',
 	n:'\u5182',
 	o:'\u66F0',
-	p:'\u5369',
-	q:'\uB2E4',
+	p:'\u5C38',
+	q:'\u353F',
 	r:'\u5C3A',
 	s:'\u4E0E',
 	t:'\u535E',
-	u:'\uB2C8',
+	u:'\u51F5',
 	v:'\u30EC',
 	w:'\u5C71',
-	x:'\u7236',
-	y:'\u30BD',
+	x:'\u4E42',
+	y:'\u4E2B',
 	z:'\u4E59'
 }
 
@@ -50,3 +50,8 @@ let convert = () => {
 
 	document.querySelector('#output').value = input
 }
+
+// focus Input
+(() => {
+	document.querySelector('#input').focus()
+})()
