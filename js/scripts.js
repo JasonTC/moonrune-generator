@@ -5,7 +5,7 @@ let character = {
 	d:'\u5200',
 	e:'\u4E47',
 	f:'\u4E4D',
-	g:'\uB354',
+	g:'\u53B6',
 	h:'\u5EFE',
 	i:'\u5DE5',
 	j:'\u4E85',
